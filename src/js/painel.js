@@ -1,8 +1,8 @@
-const imagens = document.querySelectorAll('.slide')
-const setaVoltar = document.getElementById('seta-voltar')
-const setaAvancar = document.getElementById('seta-avancar')
+const imagens = document.querySelectorAll('.slide');
+const setaVoltar = document.getElementById('seta-voltar');
+const setaAvancar = document.getElementById('seta-avancar');
 
-let imagemAtual = 0
+let imagemAtual = 0;
 
 setaAvancar.addEventListener('click', function(event){
     event.preventDefault();
@@ -18,12 +18,12 @@ setaAvancar.addEventListener('click', function(event){
     mostrarImagem();
     
     mostrarOuEsconderSetas();
-})
+});
 
 setaVoltar.addEventListener('click', function (event){
     event.preventDefault();
 
-    if(imagemAtual === 0) { //ADICIONEI ESTA PARTE POR MIM MESMO
+    if(imagemAtual === 0) {
         return
     }
     
@@ -34,7 +34,7 @@ setaVoltar.addEventListener('click', function (event){
     mostrarImagem()
     
     mostrarOuEsconderSetas();
-})
+});
 
 
 function mostrarImagem() {
@@ -61,29 +61,3 @@ function mostrarOuEsconderSetas(){
         setaAvancar.classList.remove('opacidade');
     }
 }
-
-
-
-// function 
-
-// let setaAvancar = document.getElementById('seta-avancar')
-// let imagensSlider = document.getElementsByClassName('imagens-slider')
-
-// console.log(document.getElementsByClassName('slide'))
-// setaAvancar.addEventListener('click', function (){
-//     // alert('mudar imagem do slider')
-    
-// })
-
-
-
-
-// let setaEsquerda = document.getElementsByClassName('seta-esquerda')
-
-// let setaDireita = document.getElementsByClassName('seta-direita')
-
-// console.log(setaEsquerda, setaDireita);
-
-// setaDireita.addEventListener('click', function (){
-    
-// })
