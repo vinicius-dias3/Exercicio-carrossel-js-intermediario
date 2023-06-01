@@ -103,7 +103,7 @@
     color: #10acdd;
 }
 
-@media (max-width: 925px){
+@media (max-width: 925px){ /*Media criada pra facilitar a vizualização em tela dividida, durante a criação do projeto*/
     .imagens-slider .slide .conteudo{
         width:350px;
         padding: 25px 20px;
